@@ -1,7 +1,11 @@
+//a bunch of constants
+let item = ["rock", "paper", "scissors"];
+let computerScore = 0
+let playerScore = 0
+
 // Computer randomly select r/p/s
 
 function computerPlay() {
-    let item = ["rock", "paper", "scissors"];
     let choice = item[Math.floor(Math.random() * item.length)];
     return choice;
 }
@@ -19,6 +23,7 @@ function playRound (playerSelection, computerSelection) {
 
     if (playerSelection===computerSelection) {
         let result = ("It's a tie!");
+        console.log(result)
         return result;
     } 
     
@@ -27,7 +32,8 @@ function playRound (playerSelection, computerSelection) {
         (playerSelection==="paper" && computerSelection==="rock") ||
         (playerSelection==="scissors" && computerSelection==="paper")) {
             playerScore++;
-            let result = "You won the round!";
+            let result = ("You won the round! " + playerSelection + " beats " + computerSelection);
+            console.log(result)
             return result;
     } 
     
@@ -36,7 +42,8 @@ function playRound (playerSelection, computerSelection) {
         (playerSelection==="paper" && computerSelection==="scissors") ||
         (playerSelection==="scissors" && computerSelection==="rock")) {
             computerScore++;
-            let result = "You lost the round.";
+            let result = ("You won the round! " + computerSelection + " beats " + playerSelection);
+            console.log(result)
             return result;
         }
         
@@ -48,3 +55,10 @@ function playRound (playerSelection, computerSelection) {
 
 // Play for five rounds
 
+function game(playerSelection) {
+    for (let i = 0; i < 5; i++) {
+        playRound(playerSelection)
+    }
+}
+
+game(playerSelection);
