@@ -1,4 +1,5 @@
 //Define item array
+
 const item = ["rock", "paper", "scissors"];
 
 // Computer randomly select r/p/s from item array
