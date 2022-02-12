@@ -23,5 +23,6 @@ Below are a collection of resources which helped improve my skills :sparkles: wh
 - [javascript - How do I call a function inside of another function? - Stack Overflow](https://stackoverflow.com/questions/4524877/how-do-i-call-a-function-inside-of-another-function)
 - [JavaScript Functions](https://www.w3schools.com/js/js_functions.asp)
 - [What does return do in JavaScript? The return keyword explained](https://sebhastian.com/what-does-return-do-javascript/)
+- [JavaScript Arrays](https://www.w3schools.com/js/js_arrays.asp)
 
 Built with :heart: to **The Odin Project** ~
