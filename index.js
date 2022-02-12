@@ -8,11 +8,16 @@ function computerPlay() {
     return choice;
 }
 
-// Prompt for player choice, determine win/loss/invalid choice, output result
+// Define selection and scores
 
 let playerSelection;
 let computerSelection;
-let i;
+let computerScore = 0
+let playerScore = 0
+
+// Prompt for player selection
+// Determine win/loss/invalid, assign score
+// Output round result
 
 function playRound (playerSelection, computerSelection) {
     playerSelection=prompt("Rock, Paper, or Scissors?").toLowerCase();
@@ -51,28 +56,28 @@ function playRound (playerSelection, computerSelection) {
     }
 }
 
-// Define scores, loop for 5 rounds
-
-let computerScore = 0
-let playerScore = 0
+// Loop for 5 rounds
+// Once reach score threshold, skip loop and output final result
 
 game(playerSelection);
 
-function game(playerSelection) {
+function game() {
     for (let i = 0; i < 5; i++) {
-        playRound(playerSelection);
-    }
-    // Output final result
-    if (playerScore >=3) {
-        finalResult();
-    }
-
-    else if (computerScore >= 3) {
-        finalResult();
-    }
-
-    else if (i = 5) {
-    finalResult();
+        playRound();
+        // Output final result
+        if (playerScore === 3) {
+            finalResult()
+            return i;
+        }
+        
+        else if (computerScore === 3) {
+            finalResult()
+            return i;
+        }
+        
+        else if (i===4) {
+            finalResult();
+        }
     }
 }
 
@@ -80,10 +85,14 @@ function game(playerSelection) {
 
 function finalResult() {
     if (playerScore > computerScore) {
-        console.log("Congrats, you've won the match!")
+        console.log("Congrats, 🎉 you've won the match!")
     }
 
     else if (playerScore < computerScore) {
-        console.log("You lost the match. Better luck next time!")
+        console.log("You lost the match. 😓 Better luck next time!")
+    }
+
+    else {
+        console.log("It's a tie, 🪢 what coincidence!")
     }
 }
