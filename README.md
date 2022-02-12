@@ -18,6 +18,8 @@ This project is designed as part of **The Odin Project's** wonderful Web Develop
 
 Below are a collection of resources which helped improve my skills :sparkles: while building the project:
 
+### Console
+
 - [javascript - Why is console.log() considered better than alert()? - Stack Overflow](https://stackoverflow.com/questions/8203473/why-is-console-log-considered-better-than-alert)
 - [javascript - Function that randomly returns one of three options, where all options have the exact same chance? - Stack Overflow](https://stackoverflow.com/questions/27964349/function-that-randomly-returns-one-of-three-options-where-all-options-have-the)
 - [Loops: while and for](https://javascript.info/while-for)
