@@ -1,4 +1,4 @@
-//Define item array
+// Define item array
 
 const item = ["rock", "paper", "scissors"];
 
