@@ -21,5 +21,7 @@ Below are a collection of resources which helped improve my skills :sparkles: wh
 - [javascript - Function that randomly returns one of three options, where all options have the exact same chance? - Stack Overflow](https://stackoverflow.com/questions/27964349/function-that-randomly-returns-one-of-three-options-where-all-options-have-the)
 - [Loops: while and for](https://javascript.info/while-for)
 - [javascript - How do I call a function inside of another function? - Stack Overflow](https://stackoverflow.com/questions/4524877/how-do-i-call-a-function-inside-of-another-function)
+- [JavaScript Functions](https://www.w3schools.com/js/js_functions.asp)
+- [What does return do in JavaScript? The return keyword explained](https://sebhastian.com/what-does-return-do-javascript/)
 
 Built with :heart: to **The Odin Project** ~
