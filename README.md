@@ -4,7 +4,7 @@ This is a simple, console-based **Rock, Paper, and Scissors** game.
 
 ## Live Preview
 
-This project is hosted on **GitHub Pages**. Feel free to [try it out](https://raineedust.github.io/Rock-Paper-Scissors/)!
+This project is hosted on **GitHub Pages**. Feel free to [try it out](https://raineedust.github.io/rock-paper-scissors/)!
 
 ## Motivation and Goals
 
