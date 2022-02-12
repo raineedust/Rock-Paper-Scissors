@@ -1,6 +1,6 @@
-# Rock-Paper-Scissors
+# Rock, Paper, Scissors
 
-This is a simple, console-based **Rock, Paper, and Scissors** game.
+This is a simple, console-based **Rock, Paper, Scissors** game.
 
 ## Live Preview
 
