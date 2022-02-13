@@ -13,6 +13,7 @@ This project is designed as part of **The Odin Project's** wonderful Web Develop
 - [x] Reinforce basic programming concepts
 - [x] Provide end-user console feedback during game session
 - [ ] Provide graphical and interactive UI
+- [ ] Make it pretty!
 
 ## Resources
 
