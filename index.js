@@ -1,14 +1,3 @@
-// Define item array
-
-const item = ["rock", "paper", "scissors"];
-
-// Computer randomly select r/p/s from item array
-
-function computerPlay() {
-  let choice = item[Math.floor(Math.random() * item.length)];
-  return choice;
-}
-
 // Define selection and scores
 
 let playerSelection;
@@ -16,12 +5,19 @@ let computerSelection;
 let computerScore = 0;
 let playerScore = 0;
 
-// Prompt for player selection
+// Computer randomly select r/p/s from item array
+
+const item = ["rock", "paper", "scissors"];
+
+function computerPlay() {
+  let choice = item[Math.floor(Math.random() * item.length)];
+  return choice;
+}
+
 // Determine win/loss/invalid, assign score
 // Output round result
 
 function playRound(playerSelection, computerSelection) {
-  playerSelection = prompt("Rock, Paper, or Scissors?").toLowerCase();
   computerSelection = computerPlay();
 
   if (playerSelection === computerSelection) {
@@ -73,26 +69,26 @@ function playRound(playerSelection, computerSelection) {
   }
 }
 
-// Loop for 5 rounds
-// Once reach score threshold, skip loop and output final result
+// // Loop for 5 rounds
+// // Once reach score threshold, skip loop and output final result
 
-game(playerSelection);
+// game(playerSelection);
 
-function game() {
-  for (let i = 0; i < 5; i++) {
-    playRound();
-    // Output final result
-    if (playerScore === 3) {
-      finalResult();
-      return i;
-    } else if (computerScore === 3) {
-      finalResult();
-      return i;
-    } else if (i === 4) {
-      finalResult();
-    }
-  }
-}
+// function game() {
+//   for (let i = 0; i < 5; i++) {
+//     playRound();
+//     // Output final result
+//     if (playerScore === 3) {
+//       finalResult();
+//       return i;
+//     } else if (computerScore === 3) {
+//       finalResult();
+//       return i;
+//     } else if (i === 4) {
+//       finalResult();
+//     }
+//   }
+// }
 
 // Final result
 
@@ -104,4 +100,17 @@ function finalResult() {
   } else {
     console.log("It's a tie, 🪢 what coincidence!");
   }
+}
+
+// Button UI
+
+const choiceBtn = document.querySelectorAll("div.choiceBtn button");
+choiceBtn.forEach((button) => {
+  button.addEventListener("click", getPlayerChoice);
+});
+
+function getPlayerChoice(e) {
+  let playerSelection = e.target.id;
+  console.log(playerSelection);
+  playRound(playerSelection, computerPlay());
 }
