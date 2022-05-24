@@ -29,4 +29,20 @@ Below are a collection of resources which helped improve my skills :sparkles: wh
 - [What does return do in JavaScript? The return keyword explained](https://sebhastian.com/what-does-return-do-javascript/)
 - [JavaScript Arrays](https://www.w3schools.com/js/js_arrays.asp)
 
+### GUI Version
+
+This array article has better examples compared to w3's:
+
+- [Array - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#examples)
+- [Template literals (Template strings) - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
+- [typescript - Cannot redeclare block scoped variable - Stack Overflow](https://stackoverflow.com/questions/35758584/cannot-redeclare-block-scoped-variable)
+- [HTML DOM Document querySelector() Method](https://www.w3schools.com/jsref/met_document_queryselector.asp)
+- [HTML DOM Document addEventListener() Method](https://www.w3schools.com/jsref/met_document_addeventlistener.asp)
+- [Location reload() Method](https://www.w3schools.com/jsref/met_loc_reload.asp)
+- [Arrow functions, the basics](https://javascript.info/arrow-functions-basics)
+
+### Non-Technical
+
+- [word choice - Difference between "choose" and "select" - English Language & Usage Stack Exchange](https://english.stackexchange.com/questions/13039/difference-between-choose-and-select)
+
 Built with :heart: to **The Odin Project** ~

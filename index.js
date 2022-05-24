@@ -1,116 +1,87 @@
-// Define selection and scores
+// Define Choice and scores
 
-let playerSelection;
-let computerSelection;
+let playerChoice;
+let computerChoice;
 let computerScore = 0;
 let playerScore = 0;
 
-// Computer randomly select r/p/s from item array
+// Computer randomly selects
 
-const item = ["rock", "paper", "scissors"];
+const item = [
+  { name: "Rock", value: 0 },
+  { name: "Paper", value: 1 },
+  { name: "Scissors", value: 2 },
+];
 
 function computerPlay() {
-  let choice = item[Math.floor(Math.random() * item.length)];
-  return choice;
+  computerChoice = item[Math.floor(Math.random() * item.length)];
+  return computerChoice;
 }
 
-// Determine win/loss/invalid, assign score
-// Output round result
+// Determine tie/win/loss, assign score
 
-function playRound(playerSelection, computerSelection) {
-  computerSelection = computerPlay();
+let turnResult = document.querySelector("#turnResult");
+let roundResult = document.querySelector("#roundResult");
 
-  if (playerSelection === computerSelection) {
-    let result =
-      "It's a tie round at " + playerScore + "-" + computerScore + "!";
-    console.log(result);
-    return result;
-  } else if (
-    (playerSelection === "rock" && computerSelection === "scissors") ||
-    (playerSelection === "paper" && computerSelection === "rock") ||
-    (playerSelection === "scissors" && computerSelection === "paper")
-  ) {
-    playerScore++;
-    let result =
-      "You won the round at " +
-      playerScore +
-      "-" +
-      computerScore +
-      "! " +
-      playerSelection +
-      " beats " +
-      computerSelection +
-      ".";
-    console.log(result);
-    return result;
-  } else if (
-    (playerSelection === "rock" && computerSelection === "paper") ||
-    (playerSelection === "paper" && computerSelection === "scissors") ||
-    (playerSelection === "scissors" && computerSelection === "rock")
-  ) {
-    computerScore++;
-    let result =
-      "You lost the round at " +
-      playerScore +
-      "-" +
-      computerScore +
-      ". " +
-      computerSelection +
-      " beats " +
-      playerSelection +
-      ".";
-    console.log(result);
-    return result;
-  } else if (playerSelection != "rock" || "paper" || "scissors") {
-    let result =
-      "Invalid choice. Please choose between Rock, Paper, or Scissors.";
-    console.log(result);
-    return result;
-  }
-}
+function playRound(playerChoice, computerChoice) {
+  let roundWin = `${playerChoice}-${computerChoice.value}`;
+  let playerWin = ["0-2", "1-0", "2-1"];
 
-// // Loop for 5 rounds
-// // Once reach score threshold, skip loop and output final result
-
-// game(playerSelection);
-
-// function game() {
-//   for (let i = 0; i < 5; i++) {
-//     playRound();
-//     // Output final result
-//     if (playerScore === 3) {
-//       finalResult();
-//       return i;
-//     } else if (computerScore === 3) {
-//       finalResult();
-//       return i;
-//     } else if (i === 4) {
-//       finalResult();
-//     }
-//   }
-// }
-
-// Final result
-
-function finalResult() {
-  if (playerScore > computerScore) {
-    console.log("Congrats, 🎉 you've won the match!");
-  } else if (playerScore < computerScore) {
-    console.log("You've lost the match. 😓 Better luck next time!");
+  if (Number(playerChoice) === computerChoice.value) {
+    turnResult.textContent = "It's a tie!";
+  } else if (playerWin.includes(roundWin)) {
+    playerScoreMsg.textContent = ++playerScore;
+    turnResult.textContent = `You win! ${playerItem} beats ${computerChoice.name}.`;
   } else {
-    console.log("It's a tie, 🪢 what coincidence!");
+    computerScoreMsg.textContent = ++computerScore;
+    turnResult.textContent = `You lost! ${computerChoice.name} beats ${playerItem}.`;
+  }
+  checkWinner();
+}
+
+// Announce round result
+
+const roundMsg = ["Boo, you lost to a computer!", "You won the match!"];
+
+function checkWinner() {
+  if (computerScore === 5 && computerScore > playerScore) {
+    roundResult.textContent = roundMsg[0];
+    restartGame();
+  } else if (playerScore === 5 && computerScore < playerScore) {
+    roundResult.textContent = roundMsg[1];
+    restartGame();
   }
 }
 
 // Button UI
 
+// querySelector by id
+
 const choiceBtn = document.querySelectorAll("div.choiceBtn button");
 choiceBtn.forEach((button) => {
-  button.addEventListener("click", getPlayerChoice);
+  button.addEventListener("click", playerPlay);
 });
 
-function getPlayerChoice(e) {
-  let playerSelection = e.target.id;
-  console.log(playerSelection);
-  playRound(playerSelection, computerPlay());
+function playerPlay(e) {
+  let playerChoice = e.target.id;
+  playerItem = e.target.textContent;
+  playRound(playerChoice, computerPlay());
+}
+
+// Score UI
+
+// querySelector by id
+
+const playerScoreMsg = document.querySelector("#playerScore");
+const computerScoreMsg = document.querySelector("#computerScore");
+
+// Reset UI
+
+const restartBtn = document.querySelector("#restartBtn");
+restartBtn.addEventListener("click", () => location.reload());
+
+function restartGame() {
+  choiceBtn.forEach((button) => {
+    button.removeEventListener("click", playerPlay);
+  });
 }

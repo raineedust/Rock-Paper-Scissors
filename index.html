@@ -4,19 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="styles.css" />
     <title>Rock Paper Scissors</title>
   </head>
   <body>
-    <div class="scorePanel">
-      <span id="playerScore"></span>
-      <span id="CompScore"></span>
+    <div class="header">
+      <h1>Rock Paper Scissors</h1>
+      <h2>3 Weapons | First to 5 Points | 2 Destinies</h2>
     </div>
 
     <div class="choiceBtn">
-      <button id="rock">Rock</button>
-      <button id="paper">Paper</button>
-      <button id="scissors">Scissors</button>
+      <button id="0">Rock</button>
+      <button id="1">Paper</button>
+      <button id="2">Scissors</button>
     </div>
-    <script src="index.js"></script>
+
+    
+    <div class="scorePanel">
+      <div><span id="resultLabel">Your Score:</label></div>
+        <span id="playerScore">0</span>
+      <div><span id="resultLabel">Enemy Score:</label></div>
+        <span id="computerScore">0</span>
+    </div>
+
+    
+    <div class="resultPanel">
+      <div><span id="resultLabel">Results:</label></div>
+      <span id="turnResult">Waiting for your move ...</span>
+      <span id="roundResult"></span>
+    </div>
+
+    <button id="restartBtn">Restart Game</button>
   </body>
 </html>
