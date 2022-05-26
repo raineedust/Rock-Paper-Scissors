@@ -1,6 +1,6 @@
 # Rock, Paper, Scissors
 
-This is a **Rock, Paper, and Scissors** game, designed with a dark-themed UI.
+This is a **Rock, Paper, Scissors** game, designed with a dark-themed UI.
 
 ## Live Preview
 
