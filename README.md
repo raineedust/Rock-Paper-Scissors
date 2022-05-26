@@ -1,6 +1,6 @@
 # Rock, Paper, Scissors
 
-This is a simple, console-based **Rock, Paper, and Scissors** game.
+This is a **Rock, Paper, and Scissors** game, designed with a dark-themed UI.
 
 ## Live Preview
 
@@ -12,6 +12,7 @@ This project is designed as part of **The Odin Project's** wonderful Web Develop
 
 - [x] Reinforce basic programming concepts
 - [x] Provide graphical and interactive UI
+- [x] Try to design a dark-themed UI
 - [x] Make it pretty!
 
 ## Resources
