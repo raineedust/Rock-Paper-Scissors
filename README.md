@@ -12,8 +12,8 @@ This project is designed as part of **The Odin Project's** wonderful Web Develop
 
 - [x] Reinforce basic programming concepts
 - [x] Provide end-user console feedback during game session
-- [ ] Provide graphical and interactive UI
-- [ ] Make it pretty!
+- [x] Provide graphical and interactive UI
+- [x] Make it pretty!
 
 ## Resources
 
@@ -40,6 +40,9 @@ This array article has better examples compared to w3's:
 - [HTML DOM Document addEventListener() Method](https://www.w3schools.com/jsref/met_document_addeventlistener.asp)
 - [Location reload() Method](https://www.w3schools.com/jsref/met_loc_reload.asp)
 - [Arrow functions, the basics](https://javascript.info/arrow-functions-basics)
+- [How To Animate Buttons With CSS](https://www.w3schools.com/howto/howto_css_animate_buttons.asp)
+- [How To Create a Fixed Footer](https://www.w3schools.com/howto/howto_css_fixed_footer.asp)
+- [undo - How do I "un-revert" a reverted Git commit? - Stack Overflow](https://stackoverflow.com/questions/8728093/how-do-i-un-revert-a-reverted-git-commit)
 
 ### Non-Technical
 

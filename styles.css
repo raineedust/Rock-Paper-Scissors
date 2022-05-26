@@ -1,33 +1,180 @@
 /* Global */
 :root {
-    background-color: #282c34;
-    padding: 0%;
-    margin: 0%;
-    font-family: 'Roboto', sans-serif;
+  background-color: #282c34;
+  font-family: "Roboto", sans-serif;
+  color: #dddddd;
+  text-align: center;
+}
+
+body {
+  margin: 0%;
+  padding: 0%;
 }
 
 ::selection {
-    background: #3e4451ff;
+  background: #3e4451ff;
 }
 
 /* Header */
 
 .header {
-    background-color: #21252b;
-    color: #fdd641;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px 0px;
-    margin-bottom: 5%;
+  background-color: #1e222b;
+  color: #fdd641;
+  display: flex;
+  justify-content: center;
+  border-bottom: 4px solid rgba(30, 34, 43, 0.5);
+  -webkit-background-clip: padding-box; /* for Safari */
+  background-clip: padding-box; /* Firefox 4+, Opera, Chrome */
+  width: 100%;
 }
 
-.scorePanel {
-    color: #dddddd;
-    text-align: center;
+.title {
+  font-family: ccrainet;
+  font-size: 50px;
 }
 
-.resultPanel {
-    color: #dddddd;
-    text-align: center;
+/* Main */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+  margin: 30px auto;
+}
+
+h2 {
+  margin-top: 6px;
+  font-family: ccrainet;
+  font-size: 40px;
+  margin-bottom: 6px;
+  /* ONLY if h3 exists, margin-bottom: 30px; */
+}
+
+/* h3 {
+  font-size: 25px;
+  margin: 0 0 18px 0;
+} */
+
+.choiceBtn {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 0px;
+  margin: 30px 0 50px 0;
+}
+
+.choiceBtn button {
+  font-size: 80px;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 6px rgba(255, 255, 255, 0.267);
+}
+
+.choiceBtn button:hover {
+  background-color: rgba(126, 117, 117, 0.699);
+}
+
+.choiceBtn button:active {
+  background-color: rgba(126, 117, 117, 0.699);
+  box-shadow: 0 6px #666;
+  transform: translateY(3px);
+}
+
+.playerLabel {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 25px;
+  padding-bottom: 20px;
+}
+
+.scoreLabel {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  gap: 6.8em;
+  font-family: ccrainet;
+}
+
+/* Secondary Main */
+
+#resultLabel {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 20px 0 25px 0;
+}
+
+.turnLabel {
+  display: flex;
+  justify-content: space-evenly;
+  border: 6px outset #fdb241;
+  border-radius: 10px;
+  flex-direction: column;
+  min-height: 100px;
+  margin-left: 70px;
+  max-width: 25em;
+  font-size: 22px;
+  margin-bottom: 3px;
+}
+
+#restartBtn {
+  padding: 15px 25px;
+  font-size: 36px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: rgb(0, 0, 0);
+  background-color: #fdb241;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 9px #999;
+  font-family: ccrainet;
+  margin-bottom: 1em;
+}
+
+#restartBtn:hover {
+  background-color: #f0a83c;
+}
+
+#restartBtn:active {
+  background-color: #f0a83c;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/* Footer */
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  border-top: 4px solid rgba(30, 34, 43, 0.5);
+  background-color: rgba(30, 34, 43);
+  -webkit-background-clip: padding-box; /* for Safari */
+  background-clip: padding-box; /* Firefox, Chrome */
+  min-height: 50px;
+}
+
+/* Import */
+
+@font-face {
+  font-family: slkscr;
+  src: url(./assets/Silkscreen/slkscr.ttf);
+}
+
+@font-face {
+  font-family: ccralan;
+  src: url(./assets/c_c_red_alert/C&C\ Red\ Alert\ [LAN].ttf);
+}
+
+@font-face {
+  font-family: ccrainet;
+  src: url(./assets/c_c_red_alert/C&C\ Red\ Alert\ [INET].ttf);
 }

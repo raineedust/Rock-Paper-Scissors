@@ -1,9 +1,10 @@
-// Define Choice and scores
+// Define choice and scores
 
 let playerChoice;
 let computerChoice;
 let computerScore = 0;
 let playerScore = 0;
+let turnVal = 0;
 
 // Computer randomly selects
 
@@ -28,11 +29,18 @@ function playRound(playerChoice, computerChoice) {
   let playerWin = ["0-2", "1-0", "2-1"];
 
   if (Number(playerChoice) === computerChoice.value) {
-    turnResult.textContent = "It's a tie!";
+    ++turnVal;
+    // The following message is displaying the turn, not round, but it sounds nicer.
+    resultMsg.textContent = `Results: Round ${turnVal}`;
+    turnResult.textContent = `It's a tie!`;
   } else if (playerWin.includes(roundWin)) {
+    ++turnVal;
+    resultMsg.textContent = `Results: Round ${turnVal}`;
     playerScoreMsg.textContent = ++playerScore;
     turnResult.textContent = `You win! ${playerItem} beats ${computerChoice.name}.`;
   } else {
+    ++turnVal;
+    resultMsg.textContent = `Results: Round ${turnVal}`;
     computerScoreMsg.textContent = ++computerScore;
     turnResult.textContent = `You lost! ${computerChoice.name} beats ${playerItem}.`;
   }
@@ -41,7 +49,10 @@ function playRound(playerChoice, computerChoice) {
 
 // Announce round result
 
-const roundMsg = ["Boo, you lost to a computer!", "You won the match!"];
+const roundMsg = [
+  "Boo, you lost! 😓 Better luck next time!",
+  "Congrats, 🎉 you won the match!",
+];
 
 function checkWinner() {
   if (computerScore === 5 && computerScore > playerScore) {
@@ -55,8 +66,6 @@ function checkWinner() {
 
 // Button UI
 
-// querySelector by id
-
 const choiceBtn = document.querySelectorAll("div.choiceBtn button");
 choiceBtn.forEach((button) => {
   button.addEventListener("click", playerPlay);
@@ -64,14 +73,13 @@ choiceBtn.forEach((button) => {
 
 function playerPlay(e) {
   let playerChoice = e.target.id;
-  playerItem = e.target.textContent;
+  playerItem = e.target.title;
   playRound(playerChoice, computerPlay());
 }
 
-// Score UI
+// Result and Score UI
 
-// querySelector by id
-
+const resultMsg = document.querySelector("#resultLabel");
 const playerScoreMsg = document.querySelector("#playerScore");
 const computerScoreMsg = document.querySelector("#computerScore");
 

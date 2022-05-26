@@ -6,35 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="index.js" defer></script>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
     <title>Rock Paper Scissors</title>
   </head>
   <body>
     <div class="header">
-      <h1>Rock Paper Scissors</h1>
-      <h2>3 Weapons | First to 5 Points | 2 Destinies</h2>
+      <h1 class="title">Rock &nbsp;Paper &nbsp;Scissors</h1>
     </div>
 
-    <div class="choiceBtn">
-      <button id="0">Rock</button>
-      <button id="1">Paper</button>
-      <button id="2">Scissors</button>
-    </div>
+    <main class="main">
+      <h2>3 Weapons | 5 Points | 2 Destinies</h2>
+      <!-- <h3>Choose your Weapon:</h3> -->
+      <div class="choiceBtn">
+        <button id="0" title="Rock">✊</button>
+        <button id="1" title="Paper">✋</button>
+        <button id="2" title="Scissors">✌️</button>
+      </div>
 
-    
-    <div class="scorePanel">
-      <div><span id="resultLabel">Your Score:</label></div>
-        <span id="playerScore">0</span>
-      <div><span id="resultLabel">Enemy Score:</label></div>
-        <span id="computerScore">0</span>
-    </div>
+      <div class="scorePanel">
+        <div class="playerLabel">
+          <span id="yourLabel">&nbsp;Your Score:</span>
+          <span id="enemyLabel">Enemy Score:</span>
+        </div>
+        <div class="scoreLabel">
+          <span id="playerScore">0</span>
+          <span id="computerScore">0</span>
+        </div>
+      </div>
 
-    
-    <div class="resultPanel">
-      <div><span id="resultLabel">Results:</label></div>
-      <span id="turnResult">Waiting for your move ...</span>
-      <span id="roundResult"></span>
-    </div>
+      <div class="resultPanel">
+        <div id="resultLabel">Results:</div>
+        <div class="turnLabel">
+          <div id="turnResult">
+            Waiting for your move . .
+            <img
+              src="./images/hourglass2.gif"
+              alt="hourglass"
+              style="width: 7%"
+            />
+          </div>
+          <div id="roundResult"></div>
+        </div>
+      </div>
+    </main>
 
     <button id="restartBtn">Restart Game</button>
+
+    <footer class="footer">Copyright © Tan Jin Yi 2022</footer>
   </body>
 </html>
