@@ -11,7 +11,6 @@ This project is hosted on **GitHub Pages**. Feel free to [try it out](https://ra
 This project is designed as part of **The Odin Project's** wonderful Web Development curriculum.
 
 - [x] Reinforce basic programming concepts
-- [x] Provide end-user console feedback during game session
 - [x] Provide graphical and interactive UI
 - [x] Make it pretty!
 
