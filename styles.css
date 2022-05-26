@@ -39,7 +39,7 @@ body {
   display: flex;
   flex-direction: column;
   max-width: 700px;
-  margin: 30px auto;
+  margin: 30px auto 20px auto;
 }
 
 h2 {
@@ -78,7 +78,7 @@ h2 {
 }
 
 .choiceBtn button:active {
-  background-color: rgba(126, 117, 117, 0.699);
+  background-color: rgba(138, 131, 135, 0.699);
   box-shadow: 0 6px #666;
   transform: translateY(3px);
 }
@@ -108,15 +108,18 @@ h2 {
 
 .turnLabel {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   border: 6px outset #fdb241;
   border-radius: 10px;
   flex-direction: column;
-  min-height: 100px;
-  margin-left: 70px;
-  max-width: 25em;
+  min-height: 120px;
+  /* margin-left: 70px; */
+  max-width: 20em;
   font-size: 22px;
   margin-bottom: 3px;
+  font-family: ccrainet;
+  font-size: 36px;
+  align-items: center;
 }
 
 #restartBtn {
@@ -131,7 +134,7 @@ h2 {
   border-radius: 8px;
   box-shadow: 0 9px #999;
   font-family: ccrainet;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 
 #restartBtn:hover {
@@ -139,7 +142,7 @@ h2 {
 }
 
 #restartBtn:active {
-  background-color: #f0a83c;
+  background-color: #e49a2a;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
@@ -160,6 +163,8 @@ footer {
   -webkit-background-clip: padding-box; /* for Safari */
   background-clip: padding-box; /* Firefox, Chrome */
   min-height: 50px;
+  padding: 10px 0 10px 0;
+  color: #c8c9ca;
 }
 
 /* Import */

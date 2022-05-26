@@ -9,9 +9,9 @@ let turnVal = 0;
 // Computer randomly selects
 
 const item = [
-  { name: "Rock", value: 0 },
-  { name: "Paper", value: 1 },
-  { name: "Scissors", value: 2 },
+  { item: "Rock", value: 0 },
+  { item: "Paper", value: 1 },
+  { item: "Scissors", value: 2 },
 ];
 
 function computerPlay() {
@@ -29,17 +29,17 @@ function playRound(playerChoice, computerChoice) {
     ++turnVal;
     // The following message is displaying the turn, not round, but it sounds nicer.
     resultMsg.textContent = `Results: Round ${turnVal}`;
-    turnResult.textContent = `It's a tie!`;
+    turnResult.textContent = `> It's a tie!`;
   } else if (playerWin.includes(roundWin)) {
     ++turnVal;
     resultMsg.textContent = `Results: Round ${turnVal}`;
     playerScoreMsg.textContent = ++playerScore;
-    turnResult.textContent = `You win! ${playerItem} beats ${computerChoice.name}.`;
+    turnResult.textContent = `> You win! ${playerItem} beats ${computerChoice.item}.`;
   } else {
     ++turnVal;
     resultMsg.textContent = `Results: Round ${turnVal}`;
     computerScoreMsg.textContent = ++computerScore;
-    turnResult.textContent = `You lost! ${computerChoice.name} beats ${playerItem}.`;
+    turnResult.textContent = `> You lost! ${computerChoice.item} beats ${playerItem}.`;
   }
   checkWinner();
 }
@@ -47,8 +47,8 @@ function playRound(playerChoice, computerChoice) {
 // Announce round result
 
 const roundMsg = [
-  "Boo, you lost! 😓 Better luck next time!",
-  "Congrats, 🎉 you won the match!",
+  ">> Boo, you lost! 😓 Better luck next time!",
+  ">> Congrats, 🎉 you won the match!",
 ];
 
 function checkWinner() {
