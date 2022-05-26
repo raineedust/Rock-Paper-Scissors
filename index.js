@@ -21,9 +21,6 @@ function computerPlay() {
 
 // Determine tie/win/loss, assign score
 
-let turnResult = document.querySelector("#turnResult");
-let roundResult = document.querySelector("#roundResult");
-
 function playRound(playerChoice, computerChoice) {
   let roundWin = `${playerChoice}-${computerChoice.value}`;
   let playerWin = ["0-2", "1-0", "2-1"];
@@ -78,6 +75,9 @@ function playerPlay(e) {
 }
 
 // Result and Score UI
+
+let turnResult = document.querySelector("#turnResult");
+let roundResult = document.querySelector("#roundResult");
 
 const resultMsg = document.querySelector("#resultLabel");
 const playerScoreMsg = document.querySelector("#playerScore");
