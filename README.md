@@ -43,6 +43,8 @@ This array article has better examples compared to w3's:
 - [How To Animate Buttons With CSS](https://www.w3schools.com/howto/howto_css_animate_buttons.asp)
 - [How To Create a Fixed Footer](https://www.w3schools.com/howto/howto_css_fixed_footer.asp)
 - [undo - How do I "un-revert" a reverted Git commit? - Stack Overflow](https://stackoverflow.com/questions/8728093/how-do-i-un-revert-a-reverted-git-commit)
+- [Can you set a border opacity in CSS? - Stack Overflow](https://stackoverflow.com/questions/4062001/can-you-set-a-border-opacity-in-css)
+- [CSS Borders](https://www.w3schools.com/css/css_border.asp)
 
 ### Non-Technical
 
