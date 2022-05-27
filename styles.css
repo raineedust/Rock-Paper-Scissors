@@ -9,6 +9,8 @@
 body {
   margin: 0%;
   padding: 0%;
+  position: relative;
+  min-height: 100vh;
 }
 
 ::selection {
@@ -30,7 +32,7 @@ body {
 
 .title {
   font-family: ccrainet;
-  font-size: 50px;
+  font-size: 47px;
 }
 
 /* Main */
@@ -39,11 +41,11 @@ body {
   display: flex;
   flex-direction: column;
   max-width: 700px;
-  margin: 30px auto 20px auto;
+  margin: 30px auto 25px auto;
 }
 
 h2 {
-  margin-top: 6px;
+  margin-top: 4px;
   font-family: ccrainet;
   font-size: 40px;
   margin-bottom: 6px;
@@ -58,7 +60,6 @@ h2 {
 .choiceBtn {
   display: flex;
   justify-content: space-evenly;
-  gap: 0px;
   margin: 30px 0 50px 0;
 }
 
@@ -134,7 +135,8 @@ h2 {
   border-radius: 8px;
   box-shadow: 0 9px #999;
   font-family: ccrainet;
-  margin-bottom: 2em;
+  margin-bottom: 3em;
+  position: relative;
 }
 
 #restartBtn:hover {
@@ -150,7 +152,6 @@ h2 {
 /* Footer */
 
 footer {
-  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -163,8 +164,11 @@ footer {
   -webkit-background-clip: padding-box; /* for Safari */
   background-clip: padding-box; /* Firefox, Chrome */
   min-height: 50px;
-  padding: 10px 0 10px 0;
+  padding: 0 0 0 0;
   color: #c8c9ca;
+  position: absolute;
+  bottom: 0;
+  height: 4.8rem;
 }
 
 /* Import */

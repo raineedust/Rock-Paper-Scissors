@@ -29,7 +29,7 @@ function playRound(playerChoice, computerChoice) {
     ++turnVal;
     // The following message is displaying the turn, not round, but it sounds nicer.
     resultMsg.textContent = `Results: Round ${turnVal}`;
-    turnResult.textContent = `> It's a tie!`;
+    turnResult.textContent = `> It's a tie! ${itemIcon}`;
   } else if (playerWin.includes(roundWin)) {
     ++turnVal;
     resultMsg.textContent = `Results: Round ${turnVal}`;
@@ -71,6 +71,7 @@ choiceBtn.forEach((button) => {
 function playerPlay(e) {
   let playerChoice = e.target.id;
   playerItem = e.target.title;
+  itemIcon = e.target.textContent;
   playRound(playerChoice, computerPlay());
 }
 
