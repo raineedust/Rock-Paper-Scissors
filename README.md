@@ -45,6 +45,7 @@ This array article has better examples compared to w3's:
 - [How to Remove a Commit From Github](https://www.howtogeek.com/devops/how-to-remove-a-commit-from-github/)
 - [Can you set a border opacity in CSS? - Stack Overflow](https://stackoverflow.com/questions/4062001/can-you-set-a-border-opacity-in-css)
 - [CSS Borders](https://www.w3schools.com/css/css_border.asp)
+- [How to keep your footer where it belongs ?](https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/)
 
 ### Non-Technical
 
