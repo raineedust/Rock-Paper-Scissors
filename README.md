@@ -2,6 +2,8 @@
 
 This is a **Rock, Paper, Scissors** game, designed with a dark-themed UI.
 
+![chrome_Jk9Ha](https://user-images.githubusercontent.com/87443293/170949047-c702faff-9c3a-4111-b2e9-11efd21050f8.png)
+
 ## Live Preview
 
 This project is hosted on **GitHub Pages**. Feel free to [try it out](https://raineedust.github.io/rock-paper-scissors/)!
