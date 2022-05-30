@@ -1,7 +1,6 @@
 // legacy.js is the deprecated, terminal version of rock-paper-scissors.
 // It is solely intended for archival purposes.
 
-/*
 // Define item array
 
 const item = ["rock", "paper", "scissors"];
@@ -109,4 +108,3 @@ function finalResult() {
     console.log("It's a tie, 🪢 what coincidence!");
   }
 }
-*/
