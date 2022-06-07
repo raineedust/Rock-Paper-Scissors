@@ -48,6 +48,7 @@ This array article has better examples compared to w3's:
 - [Can you set a border opacity in CSS? - Stack Overflow](https://stackoverflow.com/questions/4062001/can-you-set-a-border-opacity-in-css)
 - [CSS Borders](https://www.w3schools.com/css/css_border.asp)
 - [How to keep your footer where it belongs ?](https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/)
+- [Two Ways to Create a CSS Frosted Glass Effect](https://webdesign.tutsplus.com/tutorials/how-to-create-a-frosted-glass-effect-in-css--cms-32535)
 
 ### Non-Technical
 
