@@ -1,6 +1,6 @@
 # Rock, Paper, Scissors
 
-This is a **Rock, Paper, Scissors** game, a game that never gets old!
+This is **Rock, Paper, Scissors**, a game that never gets old!
 
 ![chrome_Jk9Ha](./images/chrome_Jk9Ha.png)
 
