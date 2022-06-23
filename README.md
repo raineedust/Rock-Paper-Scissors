@@ -17,6 +17,10 @@ This project is designed as part of **The Odin Project's** wonderful Web Develop
 - [x] Try to design a dark-themed UI
 - [x] Make it pretty!
 
+## Limitations
+
+- Not fully optimized for mobile interfaces.
+
 ## Resources
 
 Below are a collection of resources which helped improve my skills :sparkles: while building the project:
@@ -33,7 +37,7 @@ Below are a collection of resources which helped improve my skills :sparkles: wh
 
 ### GUI Version (v2)
 
-This array article has better examples compared to w3's:
+This array article has better examples compared to w3s':
 
 - [Array - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#examples)
 - [Template literals (Template strings) - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
