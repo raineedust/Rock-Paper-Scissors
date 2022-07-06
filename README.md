@@ -19,7 +19,7 @@ This project is designed as part of **The Odin Project's** wonderful Web Develop
 
 ## Limitations
 
-- Not fully optimized for mobile interfaces.
+- None, as all the requirements of this project were met.
 
 ## Resources
 
