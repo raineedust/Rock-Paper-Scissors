@@ -16,7 +16,7 @@ This project is designed as part of **The Odin Project's** wonderful Web Develop
 - [x] Implement buttons.
 - [x] Implement shadows and transition effects.
 - [x] Implement score and round output.
-- [x] Implement result output in plain English..
+- [x] Implement result output in plain English.
 - [x] Implement restart.
 - [x] Implement header and footer.
 - [x] Make it pretty!
