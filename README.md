@@ -12,9 +12,13 @@ This project is hosted on **GitHub Pages**. Feel free to [try it out](https://ra
 
 This project is designed as part of **The Odin Project's** wonderful Web Development curriculum.
 
-- [x] Reinforce basic programming concepts
-- [x] Provide graphical and interactive UI
-- [x] Try to design a dark-themed UI
+- [x] Refactor logic to accommodate for v2 GUI.
+- [x] Implement buttons.
+- [x] Implement shadows and transition effects.
+- [x] Implement score and round output.
+- [x] Implement result output in plain English..
+- [x] Implement restart.
+- [x] Implement header and footer.
 - [x] Make it pretty!
 
 ## Limitations
