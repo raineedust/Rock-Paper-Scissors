@@ -13,6 +13,7 @@ This project is hosted on **GitHub Pages**. Feel free to [try it out](https://ra
 This project is designed as part of **The Odin Project's** wonderful Web Development curriculum.
 
 - [x] Refactor logic to accommodate for v2 GUI.
+- [x] Implement with the DOM API.
 - [x] Implement buttons.
 - [x] Implement shadows and transition effects.
 - [x] Implement score and round output.
