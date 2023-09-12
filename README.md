@@ -6,7 +6,7 @@ This is **Rock, Paper, Scissors**, a game that never gets old! Now with a graphi
 
 ## Live Preview
 
-This project is hosted on **GitHub Pages**. Feel free to [try it out](https://raineedust.github.io/rock-paper-scissors/)!
+This project is hosted on **GitHub Pages**. Feel free to [try it out](https://tjy-justin.github.io/rock-paper-scissors/)!
 
 ## Motivation and Goals
 
